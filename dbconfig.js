@@ -1,10 +1,12 @@
-let mongoose=require("mongoose")
-
-mongoose.connect('mongodb+srv://arpanbagadia:5O2vxwJVlwERdW6K@arpan.4cy9l.mongodb.net/?retryWrites=true&w=majority&appName=Arpan')
+let mongoose=require('mongoose')
+mongoose.connect('mongodb+srv://namrashahimscit21:PLBMSgtNaBMGBbQ4@cluster0.vm3gy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 .then(()=>{
     console.log("database connect successfully")
+
 })
+
 .catch((err)=>{
-    console.log(err)
+    console.log("not connected",err)
 })
+
